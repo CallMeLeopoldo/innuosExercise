@@ -1,0 +1,36 @@
+.filter-button{
+    font-family: "Oxygen";
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0.25em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: orange;
+    border-radius: 5px;
+  
+  }
+  
+  .disable-button{
+    font-family: "Oxygen";
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0.25em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: orange;
+    background-color: orange;
+    border-radius: 5px;
+  
+  }
+  
+  .filter-button:hover {
+    transition: all 0.25s ease-out;
+    background-color: orange;
+    color: white;
+  }

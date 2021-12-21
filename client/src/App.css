@@ -1,0 +1,79 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2%;
+  justify-items: center;
+  grid-template-columns: repeat(4, [col-start] 15% [end]);
+  grid-template-rows: repeat(auto-fill);
+  grid-row-gap: 10em;
+  grid-column-gap: 10em;
+  background-color: #292828;
+}
+
+.albumInfo{
+  width: 200px;
+  position: relative;
+  font-family: "Oxygen";
+}
+
+.artistInfo{
+  padding-top: .5em;
+  font-size: 15px;
+  color: white;
+}
+
+.albumInfo{
+  font-size: 13px;
+  color: lightgrey;
+}
+
+.image-container{
+  width: 200px;
+  justify-content: center;
+}
+
+.icon{
+  position: absolute;
+  left: 88%;
+  top: 175px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(2, [col-start] 37% [end]);
+    grid-template-rows: repeat(auto-fill);
+    grid-row-gap: 10em;
+    grid-column-gap: 10em;
+    background-color: #292828;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(1, [col-start] 100% [end]);
+    grid-template-rows: repeat(auto-fill);
+    grid-row-gap: 10em;
+    grid-column-gap: 10em;
+    background-color: #292828;
+  }
+}
