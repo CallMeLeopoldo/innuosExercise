@@ -11,7 +11,7 @@ This project uses the following dependencies:
 
 All of the dependencies can be installed using:
 
-## `npm install --save <module-name>`
+## `npm install --save <dependency-name>`
 
 # 2. How to run
 
