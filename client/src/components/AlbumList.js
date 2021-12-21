@@ -13,7 +13,7 @@ function AlbumList() {
                         <img 
                             src={album[key].cover ? window.location.origin +`/covers/${album[key].cover}` : window.location.origin + '/images/undefined_album_cover.png'} 
                             alt=""
-                            style= {{marginRight: 2 + 'em'}, {marginLeft: 2 + 'em'}, {width: 200 + 'px'}}>
+                            className="cover">
                         
                         </img>
                     
@@ -22,7 +22,7 @@ function AlbumList() {
                             <img
                                 src={album[key].source !== "LOCAL" ? window.location.origin +`/images/qobuz.png` : null} 
                                 alt=""
-                                style= {{width: 20 + 'px'}}>
+                                className="source">
                             </img>             
 
                         </div>

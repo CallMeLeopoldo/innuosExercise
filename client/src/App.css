@@ -16,6 +16,7 @@
   grid-row-gap: 10em;
   grid-column-gap: 10em;
   background-color: #292828;
+  overflow: hidden;
 }
 
 .albumInfo{
@@ -46,34 +47,92 @@
   top: 175px;
 }
 
+.cover{
+  width: 200px;
+}
+
+.source{
+  width: 20px;
+}
+
 @media screen and (max-width: 1200px) {
   .container{
     width: 100%;
-    min-height: 100vh;
     display: grid;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: 0%;
     justify-items: center;
-    grid-template-columns: repeat(2, [col-start] 37% [end]);
+    grid-template-columns: repeat(3, [col-start] 25% [end]);
     grid-template-rows: repeat(auto-fill);
-    grid-row-gap: 10em;
-    grid-column-gap: 10em;
+    grid-row-gap: 5em;
+    grid-column-gap: 5em;
     background-color: #292828;
   }
+
+  .cover{
+    width: 130px;
+  }
+  
+  .source{
+    position: absolute;
+    width: 20px;
+    left: -6px;
+    top: -67px;
+  }
+
+  .artistInfo{
+    width: 130px;
+    padding-top: .5em;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .albumInfo{
+    width: 130px;
+    font-size: 13px;
+    color: lightgrey;
+  }  
+
 }
 
 @media screen and (max-width: 700px) {
   .container{
-    width: 100%;
-    min-height: 100vh;
     display: grid;
     padding-top: 1em;
+    padding-left: 0%;
     padding-bottom: 1em;
     justify-items: center;
-    grid-template-columns: repeat(1, [col-start] 100% [end]);
+    grid-template-columns: repeat(2, [col-start] 50% [end]);
     grid-template-rows: repeat(auto-fill);
-    grid-row-gap: 10em;
-    grid-column-gap: 10em;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
     background-color: #292828;
   }
+
+  .cover{
+    width: 130px;
+    
+  }
+
+  .source{
+    position: absolute;
+    width: 20px;
+    left: -6px;
+    top: -67px;
+  }
+
+  .artistInfo{
+    width: 130px;
+    padding-top: .5em;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .albumInfo{
+    width: 130px;
+    font-size: 13px;
+    color: lightgrey;
+  }
+  
 }
